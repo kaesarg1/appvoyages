@@ -1,0 +1,30 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+
+span {
+    font-size: large;
+    padding: 5px;
+}
+
+.title {
+    padding: 10px;
+}
+.mat-toolbar {
+    background-color:#009688;
+    height: 100px;
+}
+
+mat-icon {
+    display: inline-block;
+    font-size: 48px;
+    height: auto;
+    width: 40px;
+    padding: -30px;
+}
+
+a {
+    padding-left: 10px;
+    color: black;
+}

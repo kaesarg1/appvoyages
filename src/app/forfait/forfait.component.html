@@ -1,0 +1,54 @@
+<div class="container" *ngIf="forfaitData">
+    
+    <mat-card class="example-card">
+
+        <mat-card-header>
+            <div class="row">
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Destination: {{forfaitData.destination}}</mat-card-title>
+                <mat-card-subtitle>Ville de Depart: {{forfaitData.villeDepart}}</mat-card-subtitle>
+            </div>
+        
+        </mat-card-header>
+
+        <mat-card-content>
+        
+                <span class="md-subhead" style="font-weight: bold;">Hotel: </span>
+                <span style="margin-left:10px"> {{forfaitData.hotel && forfaitData.hotel.nom ? forfaitData.hotel.nom : '' }}</span>
+                <span class="md-subhead" style="font-weight: bold;">Coordonnées:</span>
+                <span style="margin-left:10px">{{forfaitData.hotel && forfaitData.hotel.coordonnees ?  forfaitData.hotel.coordonnees : ''}}</span>
+                <span class="md-subhead" style="font-weight: bold;">Etoiles:</span>
+                <span style="margin-left:10px"><app-etoiles [nbEtoiles]="forfaitData.hotel && forfaitData.hotel.etoiles ? forfaitData.hotel.etoiles : '' "></app-etoiles></span>
+                <span class="md-subhead" style="font-weight: bold;">Chambres:</span>
+                <span style="margin-left:10px">Chambres: {{forfaitData.hotel && forfaitData.hotel.nombreChambres ? forfaitData.hotel.nombreChambres : ''}}</span>
+                <br>
+                <span class="md-subhead" style="font-weight: bold;">Caractéristiques:</span>
+                <span style="margin-left:10px">{{forfaitData.hotel && forfaitData.hotel.caracteristiques ? forfaitData.hotel.caracteristiques : ''}}</span>
+                <br>
+                <span class="md-subhead" style="font-weight: bold;">Prix:</span>
+                <span style="margin-left:10px">{{forfaitData.prix}}</span>
+         
+        </mat-card-content>
+     
+
+        <mat-card-content>
+
+            <p>Date de Depart: {{forfaitData.dateDepart}}</p>
+        </mat-card-content>
+
+        <mat-card-content>
+            <p>Date de Retour: {{forfaitData.dateRetour}}</p>
+        </mat-card-content>
+
+        <mat-card-content>
+            <p>Prix: {{forfaitData.prix}}</p>
+        </mat-card-content>
+
+        <mat-card-content>
+            <p>Rabais: {{forfaitData.rabais}}</p>
+        </mat-card-content>
+        
+
+     </mat-card>
+</div>
+

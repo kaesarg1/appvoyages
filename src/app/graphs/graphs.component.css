@@ -1,0 +1,8 @@
+p {
+    font-family: Lato;
+  }
+
+canvas {
+    margin: auto;
+    max-width: 700px;
+}

@@ -1,0 +1,32 @@
+.container {
+    
+    background-color:#009688;
+    padding-top: 40px;
+  
+}
+
+.container :hover{
+    background-color: rgb(177, 176, 174);
+
+}
+
+
+.example-card {
+    display: flex;
+    max-width: 800px;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    /* flex-wrap: wrap; */
+    box-shadow: 5px 10px 8px #888888;
+  }
+
+mat-card-content {
+
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+}

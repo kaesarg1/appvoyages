@@ -1,0 +1,16 @@
+.example-card {
+    max-width: 600px;
+    box-shadow: 5px 10px 8px #888888;
+  }
+
+  mat-card-header {
+      background-color: #EEEEEE;
+      padding: 15px;
+      max-width: 400px;
+  }
+
+.container :hover{
+    background-color: rgb(247, 252, 245);
+
+}
+

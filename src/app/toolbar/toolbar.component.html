@@ -1,0 +1,18 @@
+<mat-toolbar >
+  <!-- <span class="example-spacer"></span> -->
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/accueil">
+      <mat-icon>flight_takeoff</mat-icon>
+      
+    </button>
+    <a routerLink="/accueil" ><span class="title">Southella</span></a>
+
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxLayout.lt-md="column" fxLayoutAlign="space-between" fxHide fxShow.gt-sm>
+      <a routerLink="/accueil" >Accueil</a>
+      <a routerLink="/apropos" >À propos</a>
+      <a routerLink="/mexique" >Forfaits Mexique</a>
+      <a routerLink="/costarica" >Forfaits Costa Rica</a>
+      <a routerLink="/administration" >Administration</a>
+    </div>
+ </mat-toolbar>
+

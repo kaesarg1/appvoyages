@@ -1,0 +1,41 @@
+
+  
+
+    <p>
+      <mat-form-field appearance="fill">
+        <mat-label>Date de départ</mat-label>
+        <mat-date-range-input [rangePicker]="picker" required [formControl]="dateDepart">
+          <input matStartDate placeholder=" Date de début">
+          <input matEndDate placeholder="date de fin">
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+    </p>
+    <p>
+
+        <mat-label>Nombre d’étoiles</mat-label>
+          <mat-slider thumbLabel tickInterval="0.5" min="1" max="5" step="0.5" value="1.5" [formControl]="etoiles"></mat-slider>
+
+    </p>
+    <mat-label>Caractéristiques</mat-label>
+  <section class="example-section">
+    <br>
+    <mat-checkbox class="example-margin" [formControl]="caracteristiques">Face à la plage</mat-checkbox> &nbsp;
+    <mat-checkbox class="example-margin" [formControl]="caracteristiques"> Miniclub</mat-checkbox>&nbsp;
+    <mat-checkbox class="example-margin" [formControl]="caracteristiques">Piscine</mat-checkbox>&nbsp;
+    <mat-checkbox class="example-margin" [formControl]="caracteristiques">...</mat-checkbox>&nbsp;
+   
+    <br>
+  </section>
+  <br>
+
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Outline form field</mat-label>
+          <input matInput placeholder="Placeholder">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </p>

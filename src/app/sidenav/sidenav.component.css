@@ -1,0 +1,30 @@
+
+
+  button {
+      height: 40px;
+      background-color:#FF8F00;
+  }
+
+p {
+      font-size: larger;
+  }
+
+.banner, mat-grid-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+
+mat-grid-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.forfaitGrid {
+  background-color:#009688;
+}
